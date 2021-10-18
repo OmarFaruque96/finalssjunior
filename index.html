@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- custom css file -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/colors.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    
+    <!-- banner section code start from here -->
+    <section id="junior-banner">
+      <div class="container">
+        <div class="row" style="align-items: center;">
+          <div class="col-md-6">
+            <!-- banner left -->
+            <div class="j-banner-left">
+              <h1>Make Your Future Better With Shikhbe Shobai</h1>
+              <p>Pellentesque tincidunt tristique neque, eget venenatis enim gravida quis. Fusce at egestas libero. Cras convallis egestas ullamcorper. Suspendisse sed ultricies nisl, pharetra .</p>
+              <a href="" class="j-reg-btn j-shadow-b">
+                Register Now
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- banner right -->
+            <div class="banner-right">
+              <img src="img/banner-right.png" class="img-fluid">
+
+              <!-- responsive items -->
+              <img src="img/itemno1.png" data-speed="-4" class="b-item1 layer">
+              <img src="img/itemno2.png" data-speed="1" class="b-item2 layer">
+              <img src="img/itemno3.png" data-speed="-2" class="b-item3 layer">
+              <img src="img/itemno4.png" data-speed="3" class="b-item4 layer">
+              <img src="img/itemno5.png" data-speed="-1" class="b-item5 layer">
+              <img src="img/itemno6.png" data-speed="2" class="b-item6 layer">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner section code ends from here -->
+
+    <!-- our features section start from here -->
+    <section id="junior-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- left content -->
+            <div class="feature-left">
+              <h6>Our Features</h6>
+              <h2>Why should you choose Shikhbe Shobai?</h2>
+              <p>Pellentesque tincidunt tristique neque, eget venenatis enim gravida quis. Fusce at egestas libero. Cras convallis egestas ullamcorper. Suspendisse sed ultricies nisl, pharetra rutrum mauris. Vestibulum at massa dui.</p>
+              <a href="" class="j-reg-btn j-shadow-b">
+                Register Now
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- right content -->
+            <div class="features-right">
+              <div class="feature-list">
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="feature-item fi-one">
+                      <img src="img/001-headphones.png">
+                      <h6>Online Support Platform</h6>
+                      <p>Pellentesque tincidunt tristique neque, eget venenati.</p>
+                    </div>
+
+                    <div class="feature-item fi-two">
+                      <img src="img/002-graduate.png">
+                      <h6>Online Support Platform</h6>
+                      <p>Pellentesque tincidunt tristique neque, eget venenati.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6" style="margin-top: -50px">
+                    <div class="feature-item fi-three">
+                      <img src="img/003-chat-box.png">
+                      <h6>Online Support Platform</h6>
+                      <p>Pellentesque tincidunt tristique neque, eget venenati.</p>
+                    </div>
+
+                    <div class="feature-item fi-four">
+                      <img src="img/004-ebook.png">
+                      <h6>Online Support Platform</h6>
+                      <p>Pellentesque tincidunt tristique neque, eget venenati.</p>
+                    </div>
+                  </div>
+                </div>
+                
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- our features section ends from here -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+    <!-- custom js code -->
+    <script type="text/javascript">
+      
+      document.addEventListener("mousemove", parallax);
+      function parallax(e){
+        this.querySelectorAll('.layer').forEach(layer => {
+
+          const speed = layer.getAttribute('data-speed')
+          const x = (window.innerWidth - e.pageX*speed)/180
+          const y = (window.innerWidth - e.pageY*speed)/180
+
+          layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+
+        })
+      }
+
+    </script>
+
+
+  </body>
+</html>

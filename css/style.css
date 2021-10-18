@@ -1,0 +1,275 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a,a:hover{
+	text-decoration: none;
+}
+.no-padding{
+	padding: 0;
+}
+/* gilroy fonts */
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url('../fonts/Gilroy-Bold.ttf');
+}
+@font-face {
+  font-family: Gilroy-ExtraBold;
+  src: url('../fonts/Gilroy-ExtraBold.otf');
+}
+@font-face {
+  font-family: Gilroy-Heavy;
+  src: url('../fonts/Gilroy-Heavy.ttf');
+}
+@font-face {
+  font-family: Gilroy-Light;
+  src: url('../fonts/Gilroy-Light.otf');
+}
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url('../fonts/Gilroy-Medium.ttf');
+}
+@font-face {
+  font-family: Gilroy-Regular;
+  src: url('../fonts/Gilroy-Regular.ttf');
+}
+.j-shadow-b{
+	box-shadow: 0px 6px 10px 0px rgb(240 91 29 / 60%);
+}
+
+/*.j-shadow-b:hover{
+    box-shadow: 0px 6px 10px 0px rgb(26 177 95);
+}*/
+.j-reg-btn{
+  width: 170px;
+    height: 55px;
+    border-radius: 8px;
+    display: inline-block;
+    line-height: 55px;
+    background-color: #f05b1d;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+
+.j-reg-btn::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  background: rgba(0,0,0,0.1);
+  width: 0%;
+  transition: 0.5s ease-in-out;
+}
+.j-reg-btn:hover{
+  color: white;
+}
+.j-reg-btn:hover::before{
+  width: 100%;
+  transition: 0.5s ease-in-out;
+  color: white;
+  border-radius: 8px;
+}
+
+
+
+/*new feataures section code start from here*/
+
+#junior-features{
+  width: 100%;
+  padding: 80px 0px;
+}
+.feature-left{
+  margin-right: 80px;
+      margin-top: 100px;
+}
+.feature-left h6{
+  font-family: Gilroy-Bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #f05b1d;
+}
+.feature-left h2{
+  font-family: Gilroy-Bold;
+  font-size: 36px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #4d4d4d;
+}
+.feature-left p{
+  font-family: Gilroy-Regular;
+  font-size: 16px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #4d4d4d;
+  margin-bottom: 32px;
+}
+.junior-btn{
+    width: 170px;
+    height: 55px;
+    border-radius: 8px;
+    display: block;
+    line-height: 55px;
+    background-color: #f05b1d;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    position: relative;
+        
+}
+.junior-btn:hover{
+  color: white;
+}
+
+.feature-list{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.feature-item{
+  text-align: center;
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 5%) 0px 3px 30px 0px;
+    padding: 30px 20px 20px 20px;
+    margin: 16px 16px 30px 16px;
+    border-radius: 8px;
+}
+.feature-item img{
+  width: 70px;
+    margin-bottom: 16px;
+}
+.feature-item h6{
+    font-family: Gilroy-Bold;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+}
+.feature-item p{
+   font-family: Gilroy-Regular;
+  font-size: 14px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: center;
+    color: #4d4d4d;
+}
+.feature-list .row .col-md-6{
+  padding: 0px !important;
+}
+.fi-one{  
+    color: #ff4756;
+}
+.fi-two{  
+    color: #6e60b8;
+}
+.fi-three{  
+    color: #0290f4;
+}
+.fi-four{  
+    color: #fea829;
+}
+
+/*new feataures section code end from here*/
+
+/*junior  banner section start from here*/
+#junior-banner{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/newbanner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+
+}
+.j-banner-left{
+  margin: 120px 0px;
+}
+.j-banner-left h1{
+  font-family: Gilroy-Bold;
+  font-size: 62px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0d3152;
+}
+.j-banner-left p{
+   font-family: Gilroy-Regular;
+  font-size: 16px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+    color: #4d4d4d;
+        margin: 24px 80px 42px 0px;
+}
+
+.banner-right{
+  position: relative;
+}
+.b-item1, .b-item2, .b-item3, .b-item4, .b-item5, .b-item6{
+  position: absolute;
+}
+.b-item1{
+  right: 0px;
+    top: 120px;
+    width: 80px;
+}
+.b-item2{
+  bottom: -50px;
+    right: -60px;
+    width: 240px;
+}
+.b-item3{
+  left: -140px;
+    bottom: -20px;
+    width: 260px;
+}
+.b-item4{
+  left: -40px;
+    bottom: 100px;
+    width: 90px;
+}
+.b-item5{
+  top: 0;
+    left: -40px;
+    width: 220px;
+}
+.b-item6{
+  top: -90px;
+    left: 28%;
+    width: 160px;
+}
+.layer{
+
+}
+/*junior banner section end frmo here*/

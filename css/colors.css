@@ -1,0 +1,59 @@
+
+/* colors */
+.j-pink{
+	background-color: #ef507d;
+}
+.j-yellow{
+	background-color: #faaf3a;
+}
+.j-orange{
+	background-color: #fd662d;
+}
+.j-green{
+	background-color: #1ab15f;
+}
+.j-blue{
+	background-color: #1375f7;
+}
+.f-green{
+	color: #21b573;
+}
+.f-orange{
+	color: #f05b1d;
+}
+.f-blue{
+	color: #1375f7;
+}
+.f-yellow{
+	color: #fea829;
+}
+.f-bg-green{
+	background: #21b573;
+}
+.f-bg-orange{
+	background: #f05b1d;
+}
+.f-bg-blue{
+	background: #1375f7;
+}
+.f-bg-yellow{
+	background: #fea829;
+}
+.jc-deep-blue{
+	background: #222e5e;
+}
+.jc-deep-green{
+	background: #1ab15f;
+}
+.jc-deep-yellow{
+	background: #fea829;
+}
+.jc-deep-pink{
+	background: #ef507d;
+}
+.jc-deep-orange{
+	background: #f05b1d;
+}
+.jc-sky-blue{
+	background: #1375f7;
+}
